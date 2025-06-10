@@ -2,23 +2,17 @@
 Large Movie Review Dataset v1.0
 The Large Movie Review Dataset v1.0 (also known as the IMDB sentiment dataset) is designed to support binary sentiment classification—that is, determining whether a movie review is positive or negative. It is widely used as a benchmark for evaluating text classification models, especially in natural language processing (NLP).
 
-# Main Features
+<h2>Main Features</h2>
 50,000 labeled reviews:
-
 25k for training, 25k for testing.
-
 Balanced: 25k positive and 25k negative reviews.
-
 Positive: IMDb rating ≥ 7/10.
-
 Negative: IMDb rating ≤ 4/10.
-
 Neutral reviews are excluded.
-
 No movie contributes more than 30 reviews to avoid dataset leakage.
-
 Disjoint movie sets between train/test (prevents memorizing movie-specific terms).
-# Citation
+
+<h2>Citation</h2>
 When using this dataset, cite the ACL 2011 paper:
 Learning Word Vectors for Sentiment Analysis
 (Maas et al., 2011)
@@ -26,7 +20,7 @@ Learning Word Vectors for Sentiment Analysis
 # Detailed Code Analysis
 Let’s break down the code you provided step-by-step:
 <h2>1. imports</h2>
-import pandas as pd : Data manipulation using DataFrames.
+<code>import pandas as pd : Data manipulation using DataFrames.</code>
 import numpy as np : Numerical operations and arrays.
 import matplotlib.pyplot as plt : Plotting and visualizing data.
 from sklearn.feature_extraction.text import TfidfVectorizer : Converts text to TF-IDF features.
