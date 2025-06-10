@@ -49,30 +49,33 @@ Negative → 0<br>
 <pre><code>df = df.sample(frac=1).reset_index(drop=True)</code></pre><br>
 
 <h2>3. Data Splitting and Vectorization</h2>
+features (x_reviews) and labels (y).<br>
 <pre><code>x_reviews = df['Review'].values<br>
 y = df['Sentiment'].values</code></pre><br>
---> Defines features (x_reviews) and labels (y).<br>
+TF-IDF Vectorizer will turn the reviews (text) into numeric feature vectors.<br>
 <pre><code>vectorizer = TfidfVectorizer()</code></pre><br>
 
---> TF-IDF Vectorizer will turn the reviews (text) into numeric feature vectors.<br>
+Splitting into training (80%) and testing (20%) sets with reproducibility (random_state=42).<br>
 <pre><code>x_train, x_test, y_train, y_test = train_test_split(
     x_reviews, y, test_size=0.2, random_state=42)</code></pre><br>
 
---> Splits into training (80%) and testing (20%) sets with reproducibility (random_state=42).<br>
+
 <h2>4. ML Pipeline</h2>
+Pipeline simplifies the process:<br>
+Step 1: TfidfVectorizer() → converts raw text to TF-IDF features.<br>
+Step 2: SVC() → trains a Support Vector Classifier.<br>
 <pre><code>pipeline = Pipeline([<br>
     ('tftdf', TfidfVectorizer()),<br>
     ('model', SVC()),<br>
 ])</code></pre><br>
 
---> Pipeline simplifies the process:<br>
-Step 1: TfidfVectorizer() → converts raw text to TF-IDF features.<br>
-Step 2: SVC() → trains a Support Vector Classifier.<br>
-<pre><code>pipeline.fit(x_train, y_train)</code></pre><br>
-
---> Trains the entire pipeline:<br>
+Trains the entire pipeline:<br>
 Automatically vectorizes text.<br>
 Fits the SVM model on training data.<br>
+<pre><code>pipeline.fit(x_train, y_train)</code></pre><br>
+
+
+
 <h2>5. Evaluation</h2>
 <pre><code>y_pred = pipeline.predict(x_test)<br>
 print(classification_report(y_test, y_pred))</code></pre><br>
@@ -80,11 +83,12 @@ print(classification_report(y_test, y_pred))</code></pre><br>
 Classification report: Precision, recall, F1-score for each class (positive/negative).<br>
 The results showed an Accuracy score of 97% which is very good result for a very basic model.<br>
 <h2>6. Saving the Pipeline</h2>
+Saving the entire pipeline (vectorizer + model) to disk using joblib.<br>
+This allows you to reuse the trained model later without retraining.<br>
 <pre><code>import joblib<br>
 joblib.dump(pipeline, '')</code></pre><br>
 
---> Saves the entire pipeline (vectorizer + model) to disk using joblib.<br>
-This allows you to reuse the trained model later without retraining.<br>
+
 <h2>Loading back (optional)</h2>
 <pre><code>pipeline = joblib.load('')</code></pre><br>
 
