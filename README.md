@@ -20,7 +20,7 @@ Learning Word Vectors for Sentiment Analysis
 # Detailed Code Analysis
 Let’s break down the code you provided step-by-step:
 <h2>1. imports</h2>
-<code>import pandas as pd : Data manipulation using DataFrames.</code>
+<code>import pandas as pd : Data manipulation using DataFrames.</code>\n
 import numpy as np : Numerical operations and arrays.
 import matplotlib.pyplot as plt : Plotting and visualizing data.
 from sklearn.feature_extraction.text import TfidfVectorizer : Converts text to TF-IDF features.
