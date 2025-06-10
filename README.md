@@ -46,7 +46,7 @@ Converts the "Sentiment" column to binary:<br>
 Positive → 1<br>
 Negative → 0<br>
 <h4>Shuffling data</h4>
-<pre><code>df = df.sample(frac=1).reset_index(deop=True)</code></pre><br>
+<pre><code>df = df.sample(frac=1).reset_index(drop=True)</code></pre><br>
 
 <h2>3. Data Splitting and Vectorization</h2>
 <pre><code>x_reviews = df['Review'].values<br>
