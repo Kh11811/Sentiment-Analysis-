@@ -18,7 +18,7 @@ Learning Word Vectors for Sentiment Analysis<br>
 (Maas et al., 2011)<br>
 
 # Detailed Code Analysis
-Let’s break down the code you provided step-by-step:<br>
+Let’s break down the code step-by-step:<br>
 <h2>1. imports</h2><br>
 <pre>
 <code>import pandas as pd</code> : Data manipulation using DataFrames.<br>
