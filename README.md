@@ -30,8 +30,6 @@ Let’s break down the code step-by-step:<br>
 <h2>1. imports</h2><br>
 <pre>
 <code>import pandas as pd</code> : Data manipulation using DataFrames.<br>
-<code>import numpy as np</code> : Numerical operations and arrays.<br>
-<code>import matplotlib.pyplot as plt</code> : Plotting and visualizing data.<br>
 <code>from sklearn.feature_extraction.text import TfidfVectorizer</code> : Converts text to TF-IDF features.<br>
 <code>from sklearn.pipeline import Pipeline</code> : Builds an end-to-end ML pipeline.</code><br>
 <code>from sklearn.model_selection import train_test_split</code> : Splits data into training/testing sets.<br>
