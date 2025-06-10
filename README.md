@@ -1,7 +1,8 @@
-# Dataset Description:
+# Sentiment Analysis on Large Movie Review Dataset
 Large Movie Review Dataset v1.0
 The Large Movie Review Dataset v1.0 (also known as the IMDB sentiment dataset) is designed to support binary sentiment classification—that is, determining whether a movie review is positive or negative. It is widely used as a benchmark for evaluating text classification models, especially in natural language processing (NLP).<br>
 
+# Dataset Description:
 <h2>Main Features</h2>
 50,000 labeled reviews:<br>
 25k for training, 25k for testing.<br>
@@ -69,7 +70,7 @@ Step 2: SVC() → trains a Support Vector Classifier.<br>
     ('model', SVC()),<br>
 ])</code></pre><br>
 
-Trains the entire pipeline:<br>
+Training the entire pipeline:<br>
 Automatically vectorizes text.<br>
 Fits the SVM model on training data.<br>
 <pre><code>pipeline.fit(x_train, y_train)</code></pre><br>
