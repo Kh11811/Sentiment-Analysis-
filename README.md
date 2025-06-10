@@ -20,14 +20,14 @@ Learning Word Vectors for Sentiment Analysis
 # Detailed Code Analysis
 Let’s break down the code you provided step-by-step:
 <h2>1. imports</h2>
-<code>import pandas as pd : Data manipulation using DataFrames.</code>\n
-import numpy as np : Numerical operations and arrays.
-import matplotlib.pyplot as plt : Plotting and visualizing data.
-from sklearn.feature_extraction.text import TfidfVectorizer : Converts text to TF-IDF features.
-from sklearn.pipeline import Pipeline : Builds an end-to-end ML pipeline.
-from sklearn.model_selection import train_test_split : Splits data into training/testing sets.
-from sklearn.svm import SVC : Support Vector Machine classifier.
-from sklearn.metrics import accuracy_score, classification_report : Metrics for evaluating classification.
+<code>import pandas as pd : Data manipulation using DataFrames.</code>
+<code>import numpy as np : Numerical operations and arrays.</code>
+<code>import matplotlib.pyplot as plt : Plotting and visualizing data.</code>
+<code>from sklearn.feature_extraction.text import TfidfVectorizer : Converts text to TF-IDF features.</code>
+<code>from sklearn.pipeline import Pipeline : Builds an end-to-end ML pipeline.</code>
+<code>from sklearn.model_selection import train_test_split : Splits data into training/testing sets.</code>
+<code>from sklearn.svm import SVC : Support Vector Machine classifier.</code>
+<code>from sklearn.metrics import accuracy_score, classification_report : Metrics for evaluating classification.</code>
 <h2>2. Loading & Preparing Data</h2>
 # Adding training data
 file_path_train = 'train.csv'
