@@ -1,8 +1,6 @@
 
 #imports
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
