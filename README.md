@@ -106,7 +106,7 @@ balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 </code></pre><br>
 <h3>Result</h3>
 
-| Actual Positive | [[0.94332392, 0.05667608]<br>
-| Actual Negative | [0.06783023, 0.93216977]]<br>
+Actual Positive | [[0.94332392, 0.05667608]<br>
+<align>Actual Negative | [0.06783023, 0.93216977]]<br>
 <h2>Summary of Pipeline Flow</h2>
 Raw Movie Reviews → TF-IDF Vectorization → Support Vector Classifier → Predictions → Evaluation → Save Model<br>
