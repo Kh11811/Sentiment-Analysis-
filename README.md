@@ -105,10 +105,10 @@ cm = confusion_matrix(y_test, y_pred)<br>
 balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 </code></pre><br>
 <h3>Result</h3>
-#|                     | Predicted Positive  | Predicted Negative  |<br>
-#| ------------------- | ------------------- | ------------------- |<br>
-#| Actual Positive | TP (True Positive)  | FN (False Negative) |<br>
-#| Actual Negative | FP (False Positive) | TN (True Negative)  |<br>
+<ul>|                     | Predicted Positive  | Predicted Negative  |</ul><br>
+| ------------------- | ------------------- | ------------------- |<br>
+| Actual Positive | TP (True Positive)  | FN (False Negative) |<br>
+| Actual Negative | FP (False Positive) | TN (True Negative)  |<br>
 
 <h2>Summary of Pipeline Flow</h2>
 Raw Movie Reviews → TF-IDF Vectorization → Support Vector Classifier → Predictions → Evaluation → Save Model<br>
