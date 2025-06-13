@@ -108,5 +108,18 @@ balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 
 Actual Positive : [0.94332392, 0.05667608]<br>
 Actual Negative : [0.06783023, 0.93216977]<br>
+<h2>Predict your own text</h2>
+<pre><code>#predict your own text
+L = ["Give someone the cold shoulder",<br>
+     "To fail spectacularly.",<br>
+     "keep it up.",<br>
+     "To achieve great success."]<br>
+predictions = list(pipeline.predict(L))<br>
+for i in predictions:<br>
+  if i == 1:<br>
+    print("Positive")<br>
+  else:<br>
+    print("Negative")<br>
+</code></pre><br><br>
 <h2>Summary of Pipeline Flow</h2>
 Raw Movie Reviews → TF-IDF Vectorization → Support Vector Classifier → Predictions → Evaluation → Save Model<br>
