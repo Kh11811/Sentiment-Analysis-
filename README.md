@@ -105,11 +105,13 @@ cm = confusion_matrix(y_test, y_pred)<br>
 balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 </code></pre><br>
 <h3>Result</h3>
-
+<pre><code>
 Actual Positive : [0.94332392, 0.05667608]<br>
 Actual Negative : [0.06783023, 0.93216977]<br>
+</code></pre><br><br>
+
 <h2>Predict your own text</h2>
-<pre><code>#predict your own text
+<pre><code>
 L = ["Give someone the cold shoulder",<br>
      "To fail spectacularly.",<br>
      "keep it up.",<br>
@@ -122,9 +124,12 @@ for i in predictions:<br>
     print("Negative")<br>
 </code></pre><br><br>
 <h3>Results</h3>
+<pre><code>
 Negative<br>
 Negative<br>
 Positive<br>
 Positive<br>
+</code></pre><br><br>
+
 <h2>Summary of Pipeline Flow</h2>
 Raw Movie Reviews → TF-IDF Vectorization → Support Vector Classifier → Predictions → Evaluation → Save Model<br>
