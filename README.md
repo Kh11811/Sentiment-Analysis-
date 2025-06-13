@@ -121,5 +121,10 @@ for i in predictions:<br>
   else:<br>
     print("Negative")<br>
 </code></pre><br><br>
+<h3>Results</h3>
+Negative<br>
+Negative<br>
+Positive<br>
+Positive<br>
 <h2>Summary of Pipeline Flow</h2>
 Raw Movie Reviews → TF-IDF Vectorization → Support Vector Classifier → Predictions → Evaluation → Save Model<br>
