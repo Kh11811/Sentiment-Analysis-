@@ -116,7 +116,7 @@ L = ["Give someone the cold shoulder",<br>
      "To fail spectacularly.",<br>
      "keep it up.",<br>
      "To achieve great success."]<br>
-predictions = list(pipeline.predict(L))<br>
+predictions = pipeline.predict(L)<br>
 for i in predictions:<br>
   if i == 1:<br>
     print("Positive")<br>
