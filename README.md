@@ -97,7 +97,7 @@ joblib.dump(pipeline, '')</code></pre><br>
 
 <h2>Loading back (optional)</h2>
 <pre><code>pipeline = joblib.load('')</code></pre><br>
-<h2>Confusion Matrix</h2>
+<h2>7. Confusion Matrix</h2>
 <pre><code>from sklearn.metrics import confusion_matrix<br>
 import numpy as np<br>
 y_pred = pipeline.predict(x_test)<br>
@@ -110,7 +110,7 @@ Actual Positive : [0.94332392, 0.05667608]<br>
 Actual Negative : [0.06783023, 0.93216977]<br>
 </code></pre><br><br>
 
-<h2>Predict your own text</h2>
+<h2>8. Predict your own text</h2>
 <pre><code>
 L = ["Give someone the cold shoulder",<br>
      "To fail spectacularly.",<br>
