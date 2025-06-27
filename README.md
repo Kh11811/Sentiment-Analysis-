@@ -109,7 +109,7 @@ balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 
 <pre><code>
 Actual Positive : [0.9462, 0.0537]<br>
-Actual Negative : [0.06783023, 0.93216977]<br>
+Actual Negative : [0.0674, 0.9325]<br>
 </code></pre><br><br>
 
 <h2>8. Predict your own text</h2>
