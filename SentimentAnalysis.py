@@ -32,6 +32,10 @@ y_pred = pipeline.predict(x_test)
 
 print(classification_report(y_test, y_pred))
 
+cm = confusion_matrix(y_true, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot(cmap=plt.cm.Reds) 
+
 import joblib
 # Save pipeline
 joblib.dump(pipeline, '/content/drive/MyDrive/Colab datasets/sentiment_pipeline.joblib')
