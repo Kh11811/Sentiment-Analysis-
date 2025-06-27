@@ -124,7 +124,7 @@ for i in predictions:<br>
     print("Negative")<br>
 </code></pre><br><br>
 <h3>Results</h3>
-<img href= ''>
+<img href= 'confusionmatrix.png'>
 <pre><code>
 Negative<br>
 Negative<br>
