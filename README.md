@@ -108,7 +108,7 @@ balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 <img src="confusionmatrix.png" alt="ConfusionMatrix" width="200" height="200">
 
 <pre><code>
-Actual Positive : [0.94332392, 0.05667608]<br>
+Actual Positive : [0.9462, 0.0537]<br>
 Actual Negative : [0.06783023, 0.93216977]<br>
 </code></pre><br><br>
 
