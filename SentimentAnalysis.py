@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
-
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 file_path_train = 'train.csv'
 df_train = pd.read_csv(file_path_train)
 
