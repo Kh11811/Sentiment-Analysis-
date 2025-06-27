@@ -105,6 +105,8 @@ cm = confusion_matrix(y_test, y_pred)<br>
 balanced_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]<br>
 </code></pre><br>
 <h3>Result</h3>
+<img src="confusionmatrix.png" alt="Description of image" width="300" height="200">
+
 <pre><code>
 Actual Positive : [0.94332392, 0.05667608]<br>
 Actual Negative : [0.06783023, 0.93216977]<br>
@@ -124,7 +126,6 @@ for i in predictions:<br>
     print("Negative")<br>
 </code></pre><br><br>
 <h3>Results</h3>
-<img href= 'confusionmatrix.png'>
 <pre><code>
 Negative<br>
 Negative<br>
