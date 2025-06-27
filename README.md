@@ -35,6 +35,7 @@ Let’s break down the code step-by-step:<br>
 <code>from sklearn.model_selection import train_test_split</code> : Splits data into training/testing sets.<br>
 <code>from sklearn.svm import SVC</code> : Support Vector Machine classifier.<br>
 <code>from sklearn.metrics import classification_report</code> : Metrics for evaluating classification.<br>
+<code>from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay : Matrice de confusion</code>    
 </pre>
 <h2>2. Loading & Preparing Data</h2>
 <h4>Adding training data</h4>
